@@ -27,5 +27,12 @@ public class main
         exm[0].ene.display_enemies();
         exm[1].ene.display_enemies();
 
+
+        exm[0].loc.get_info_location();
+
+        Set x = new Set();
+        x.charac.choice_character(exm[0].charac, exm[1].charac);
+
+        exm[1].ene.get_help(exm[0].charac.return_lvl());
     }
 }

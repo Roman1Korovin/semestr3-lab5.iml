@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Enemies {
     private int lvl;
     private String type;
@@ -21,4 +23,9 @@ public class Enemies {
         System.out.println(" |" + lvl + "|           |" + type + "|      |" + weakness + "|        |" + resistance + "|\n");
         System.out.println("........................................................................");
     }
+    public void get_help(int x)
+    {
+        System.out.println( "\nЕсли ваш уровень ("+x+") ниже уровня ваших противников ("+ lvl +"), то, возможно, вам следует отступить!\n");
+    }
+
 }

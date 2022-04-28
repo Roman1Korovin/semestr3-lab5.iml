@@ -19,5 +19,9 @@ public class Location {
         System.out.println(" |" + size + "x" + size + "|                |" + typemap + "|        |" + weather + "|\n");
         System.out.println("........................................................................");
     }
+    public void get_info_location() {
+        if (typemap == "Пустыня") System.out.println("\nВы отправляетесь в пустыню! Лучше запаситесь водой.\n");
+        if (typemap == "Снежные горы") System.out.println("\nОх, постарайтесь не замёрзнуть в горах. ЛУчше оденьтесь потеплей\n");
 
+    }
 }
