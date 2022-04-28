@@ -21,5 +21,11 @@ public class main
         exm[0].charac.display_character();
         exm[1].charac.display_character();
 
+        exm[0].ene.init_enemies();
+        exm[1].ene.init_enemies2(19, "Люди", "Склонны к убеждению", "Оружие ближнего боя");
+
+        exm[0].ene.display_enemies();
+        exm[1].ene.display_enemies();
+
     }
 }
