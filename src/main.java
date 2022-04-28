@@ -14,5 +14,12 @@ public class main
 
         exm[0].loc.display_location();
         exm[1].loc.display_location();
+
+        exm[0].charac.init_character();
+        exm[1].charac.init_character2("Орк", 56, "Воин", "Двуручный меч");
+
+        exm[0].charac.display_character();
+        exm[1].charac.display_character();
+
     }
 }
