@@ -12,8 +12,10 @@ public class main
         exm[0].loc.init_location();
         exm[1].loc.init_location2(6, "Снежные горы", "Дождь");
 
-        exm[0].loc.display_location();
-        exm[1].loc.display_location();
+        for(int i=0;i<2;i++) {
+            exm[i].loc.display_location();
+        }
+
 
         exm[0].charac.init_character();
         exm[1].charac.init_character2("Орк", 56, "Воин", "Двуручный меч");
@@ -28,11 +30,15 @@ public class main
         exm[1].ene.display_enemies();
 
 
+
         exm[0].loc.get_info_location();
 
         Set x = new Set();
         x.charac.choice_character(exm[0].charac, exm[1].charac);
 
         exm[1].ene.get_help(exm[0].charac.return_lvl());
+
+
+        exm[0].loc.return_value();
     }
 }

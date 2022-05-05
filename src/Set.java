@@ -1,4 +1,3 @@
-
 public class Set {
         public Location loc;
         public Character charac;

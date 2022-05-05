@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class Enemies {
     private int lvl;
     private String type;
