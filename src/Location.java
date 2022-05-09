@@ -17,6 +17,7 @@ public class Location {
         System.out.println(" Локация:\n |Размер карты(км)|   |Тип карты|      |Погода|\n");
         System.out.println(" |" + this.size + "x" + this.size + "|                |" + this.typemap + "|        |" +this.weather + "|\n");
         System.out.println("........................................................................");
+        Set.count++;
     }
     public void get_info_location() {
         if (typemap == "Пустыня") System.out.println("\nВы отправляетесь в пустыню! Лучше запаситесь водой.\n");

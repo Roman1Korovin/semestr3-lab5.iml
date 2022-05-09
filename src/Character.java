@@ -23,6 +23,7 @@ public class Character {
         System.out.println(" Персонаж:\n |Раса|     |Уровень|     |Класс|     |Оружение|\n");
         System.out.println(" |" + race + "|      |" + lvl + "|          |" + clas + "|      |" + weapon + "|\n");
         System.out.println("........................................................................");
+        Set.count++;
     }
 
     public void choice_character(Character x, Character y) {

@@ -20,6 +20,7 @@ public class Enemies {
         System.out.println(" Враги:\n |Уровень|      |Тип|       |Уязвимость|      |Сопротивление|\n");
         System.out.println(" |" + lvl + "|           |" + type + "|      |" + weakness + "|        |" + resistance + "|\n");
         System.out.println("........................................................................");
+        Set.count++;
     }
     public void get_help(int x)
     {

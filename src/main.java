@@ -29,7 +29,7 @@ public class main
         exm[0].ene.display_enemies();
         exm[1].ene.display_enemies();
 
-
+        System.out.println("Кол-во выведенных блоков информации - " + Set.count + "\n");
 
         exm[0].loc.get_info_location();
 
