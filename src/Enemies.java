@@ -4,13 +4,13 @@ public class Enemies {
     private String weakness;
     private String resistance;
 
-    public void init_enemies(){
+    public Enemies(){
         lvl = 14;
         type = "Демоны";
         weakness = "Свет";
         resistance = "Огонь";
     }
-    public void init_enemies2(int a, String b, String c, String d){
+    public Enemies(int a, String b, String c, String d){
         lvl = a;
         type = b;
         weakness = c;

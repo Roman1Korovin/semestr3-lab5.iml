@@ -6,14 +6,14 @@ public class Character {
     private String clas;
     private String weapon;
 
-    public void init_character() {
+    public Character() {
         race = "Эльф";
         lvl = 24;
         clas = "Маг";
         weapon = "Посох искупления";
     }
 
-    public void init_character2(String a, int b, String c, String d) {
+    public Character(String a, int b, String c, String d) {
         race = a;
         lvl = b;
         clas = c;

@@ -3,12 +3,12 @@ public class Location {
     private String typemap;
     private String weather;
 
-    public void init_location(){
+    public Location(){
         this.size = 5;
         this.typemap = "Пустыня";
         this.weather = "Сонечно";
     }
-    public void init_location2(int a, String b, String c){
+    public Location(int a, String b, String c){
         this.size = a;
         this.typemap = b;
         this.weather = c;
