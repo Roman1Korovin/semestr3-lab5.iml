@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Enemies {
     private int lvl;
     private String type;
@@ -11,7 +12,21 @@ public class Enemies {
         resistance = "Огонь";
     }
     public Enemies(int a, String b, String c, String d){
-        lvl = a;
+        Scanner scanner = new Scanner(System.in);
+        int q =0;
+        while(q==0)
+            try {
+                System.out.println("Введите уровень: ");
+                lvl = scanner.nextInt();
+                if(lvl<0){
+                    throw new Exception(String.valueOf(lvl));
+                }
+                q=1;
+            }
+        catch ( Exception ex)
+        {
+            System.out.println("Ошибка ввода! Уровень не может быть отрицательным!");
+        }
         type = b;
         weakness = c;
         resistance = d;

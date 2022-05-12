@@ -9,12 +9,18 @@ public class Set {
         }
 
         public Set(){
+
                 loc = new Location();
                 charac = new Character();
                 ene = new Enemies();
         }
         public void init(){
-                loc = new Location(6, "Снежные горы", "Дождь");
+                try {
+                        loc = new Location(6, "Снежные горы", "Дождь");
+                }
+                catch(Exception ex){
+                     System.out.println("Ошибка создания локации!! Ошибка: " + ex.getMessage() + "\n");
+                }
                 charac = new Character("Орк", 56, "Воин", "Двуручный меч");
                 ene = new Enemies(19, "Люди", "Склонны к убеждению", "Оружие ближнего боя");
 
