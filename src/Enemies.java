@@ -17,7 +17,7 @@ public class Enemies {
         while(q==0)
             try {
                 System.out.println("Введите уровень: ");
-                lvl = scanner.nextInt();
+                lvl = a;
                 if(lvl<0){
                     throw new Exception(String.valueOf(lvl));
                 }
