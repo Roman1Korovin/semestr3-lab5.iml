@@ -39,7 +39,8 @@ public class main
 
         exm[1].ene.get_help(exm[0].charac.return_lvl());
 
-
         exm[0].loc.return_value();
+
+        x.init_NPC();
     }
 }

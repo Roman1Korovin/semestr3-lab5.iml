@@ -1,4 +1,9 @@
-public class Location {
+interface  Iprinter
+{
+    void Print();
+}
+
+public class Location implements   Iprinter{
     private int size;
     private String typemap;
     private String weather;
@@ -35,6 +40,13 @@ public class Location {
 
     public void get_size(Rezult z){
         z.param = size;
+    }
+
+    public void Print()
+    {
+        System.out.println(" Локация:\n |Размер карты(км)|   |Тип карты|      |Погода|\n");
+        System.out.println(" |" + this.size + "x" + this.size + "|                |" + this.typemap + "|        |" + this.weather + "|\n");
+        System.out.println("........................................................................");
     }
 }
 

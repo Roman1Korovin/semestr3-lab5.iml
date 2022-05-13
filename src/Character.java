@@ -1,11 +1,16 @@
 import java.util.Scanner;
 
-public class Character {
+public class Character implements Cloneable{
     private String race;
-    private int lvl;
+    protected int lvl;
     private String clas;
     private String weapon;
 
+    public Object Clone() {
+        {
+            return new Character(race = this.race, lvl = this.lvl, clas = this.clas, weapon = this.weapon);
+        }
+    }
     public Character() {
         race = "Эльф";
         lvl = 24;
@@ -19,10 +24,13 @@ public class Character {
         clas = c;
         weapon = d;
     }
-    public void display_character(){
+
+    public void display_character() {
+        Sword sw= new Sword();
         System.out.println(" Персонаж:\n |Раса|     |Уровень|     |Класс|     |Оружение|\n");
         System.out.println(" |" + race + "|      |" + lvl + "|          |" + clas + "|      |" + weapon + "|\n");
         System.out.println("........................................................................");
+        sw.display_weapon();
         Set.count++;
     }
 
@@ -42,8 +50,21 @@ public class Character {
             if (a == 2) System.out.println("Любите решать проблемы грубой силой? Замечательно!\n");
         }
     }
-        public int return_lvl()
-        {
-            return lvl;
-        }
+
+    public int return_lvl() {
+        return lvl;
+    }
+}
+class  NPC extends Character {
+    private String name;
+    private String  cpecialization;
+
+    public NPC(String a, String b, int c){
+        name = a;
+        cpecialization=b;
+        lvl=c;
+    }
+    public int return_lvl(int t){
+        return lvl;
+    }
 }

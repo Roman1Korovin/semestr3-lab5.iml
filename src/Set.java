@@ -16,12 +16,22 @@ public class Set {
         }
         public void init(){
                 try {
-                        loc = new Location(6, "Снежные горы", "Дождь");
+                        Iprinter printer = new Location();
+                        printer.Print();
+
                 }
                 catch(Exception ex){
                      System.out.println("Ошибка создания локации!! Ошибка: " + ex.getMessage() + "\n");
                 }
                 charac = new Character("Орк", 56, "Воин", "Двуручный меч");
+
+                Character charac= new Character("Орк", 56, "Воин","Двуручный меч");
+                Character charac2 = (Character)charac.Clone();  //клонирование
+                Character charac3 =new Character("Эльф",24,"Маг","Посох искупления");
+                charac2 = charac3;
+                charac.display_character();
+                charac2.display_character();
+                charac3.display_character();
 
                 final int N = 2; final int M = 2;
                 Enemies[][] ene = new Enemies[N][M];
@@ -35,6 +45,10 @@ public class Set {
                         {
                                 ene[i][j].display_enemies();
                         }
+        }
+        public void init_NPC(){
+                NPC ch = new NPC("Илья","Кузнец",2);
+                ch.return_lvl();
         }
 }
 
